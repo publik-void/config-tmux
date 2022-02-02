@@ -6,7 +6,7 @@ is_app_installed() {
   type "$1" &>/dev/null
 }
 
-# get data either form stdin or from file
+# get data either from stdin or from file
 buf=$(cat "$@")
 
 copy_backend_remote_tunnel_port=$(tmux show-option -gvq "@copy_backend_remote_tunnel_port")
